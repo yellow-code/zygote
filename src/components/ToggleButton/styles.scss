@@ -1,0 +1,36 @@
+// @import 'styles/base';
+
+.toggle-button {
+  display: block;
+  height: 24px;
+  width: 48px;
+  border-radius: 12px;
+  background: var(--color-secondary-light);
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  position: relative;
+
+  .knob {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: var(--color-secondary);
+
+    position: absolute;
+    top: calc((24px - 18px) / 2);
+    left: 0;
+    transform: translateX(calc(4px));
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &.on {
+    background: var(--color-primary-light);
+
+    .knob {
+      background: var(--color-primary);
+      transform: translateX(calc(48px - 18px - 4px));
+    }
+  }
+}

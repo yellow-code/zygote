@@ -1,0 +1,17 @@
+:root {
+  --color-primary: rgba(211, 84, 0, 1);
+  --color-primary-light: rgba(211, 84, 0, 0.4);
+  --color-secondary: rgba(127, 140, 141, 1);
+  --color-secondary-light: rgba(127, 140, 141, 0.4);
+  --color-background: #ecf0f1;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-background);
+}
