@@ -1,2 +1,2 @@
-export const _cs = (args: string[]) =>
+export const _cs = (args: (string | undefined)[]) =>
   args.filter(a => !!a).join(' ');

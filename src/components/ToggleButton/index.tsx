@@ -1,23 +1,22 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 import { _cs } from 'common/utils';
 import styles from './styles.scss';
 
-export default function ToggleButton() {
-  const [checked, setChecked] = useState(false);
+interface PropTypes {
+  className?: string;
+  checked?: boolean;
+  onToggle?: () => void;
+}
 
-  const onClick = useCallback(
-    () => {
-      setChecked(!checked);
-    }, [setChecked, checked]
-  );
+export default function ToggleButton(props: PropTypes) {
 
-  const classNames = [styles.toggleButton];
-  if (checked) {
+  const classNames = [styles.toggleButton, props.className];
+  if (props.checked) {
     classNames.push(styles.on);
   }
 
   return (
-    <button className={_cs(classNames)} onClick={onClick}>
+    <button className={_cs(classNames)} onClick={props.onToggle}>
       <div className={styles.knob} />
     </button>
   );

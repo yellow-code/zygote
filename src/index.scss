@@ -3,7 +3,12 @@
   --color-primary-light: rgba(211, 84, 0, 0.4);
   --color-secondary: rgba(127, 140, 141, 1);
   --color-secondary-light: rgba(127, 140, 141, 0.4);
+  --color-secondary-lighter: rgba(127, 140, 141, 0.1);
   --color-background: #ecf0f1;
+
+  --font-logo: 'Righteous', cursive;
+  --font-primary: 'Jost', sans-serif;
+  --font-mono: 'Ubuntu Mono', monospace;
 }
 
 *, *::after, *::before {

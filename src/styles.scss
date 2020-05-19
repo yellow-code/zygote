@@ -1,0 +1,21 @@
+.logo {
+  margin: 24px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  height: 70vh;
+
+  margin-top: 3%;
+
+  .filter-list {
+    flex-basis: 25%;
+  }
+
+  .code-bin {
+    flex-basis: 70%;
+    margin-right: 3%;
+  }
+}

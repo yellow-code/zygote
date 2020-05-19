@@ -1,0 +1,26 @@
+.logo {
+  font-family: var(--font-logo);
+  font-size: 64px;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  .o {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    border: 8px solid var(--color-primary);
+    position: relative;
+
+    &::after {
+      content: '∞';
+
+      position: absolute;
+      top: -40%;
+
+      font-size: 64px;
+    }
+  }
+}
