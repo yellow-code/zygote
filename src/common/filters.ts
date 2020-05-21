@@ -2,20 +2,60 @@ export const filters = [
   {
     name: 'CSS Stylesheet',
     id: 'css',
-    content: '<link rel="stylesheet" href="css/index.css">',
-    location: 'head'
+    content: {
+      embedded: {
+        pre: '<style type="text/css">',
+        post: '</style>',
+        location: 'head',
+      },
+      link: {
+        pre: '<link rel="stylesheet" href="',
+        post: '">',
+        filename: 'index.css',
+        location: 'head',
+      }
+    },
   },
   {
     name: 'JavaScript',
     id: 'js',
-    content: '<script type="text/javascript" src="js/index.js"></script>',
-    location: 'head'
+    content: {
+      embedded: {
+        pre: '<script type="text/javascript">',
+        post: '</script>',
+        location: 'body'
+      },
+      link: {
+        pre: '<script type="text/javascript" src="',
+        post: '"></script>',
+        location: 'head',
+        filename: 'index.js'
+      }
+    },
   },
   {
     name: 'Favicon',
     id: 'favicon',
-    content: '<link rel="icon" type="image/png" href="favicon.png">',
-    location: 'head'
+    content: {
+      ico: {
+        pre: '<link rel="icon" type="image/x-icon" href="',
+        post: '">',
+        location: 'head',
+        filename: 'favicon.ico'
+      },
+      png: {
+        pre: '<link rel="icon" type="image/png" href="',
+        post: '">',
+        location: 'head',
+        filename: 'favicon.png',
+      },
+      gif: {
+        pre: '<link rel="icon" type="image/gif" href="',
+        post: '">',
+        location: 'head',
+        filename: 'favicon.gif',
+      }
+    },
   },
   {
     name: 'Viewport',
@@ -26,8 +66,12 @@ export const filters = [
   {
     name: 'Google Web Fonts',
     id: 'googlefonts',
-    content: '<link href="https://fonts.googleapis.com/css?family=font1|font2|font3&display=swap" rel="stylesheet">',
-    location: 'head'
+    content: {
+      pre: '<link href="https://fonts.googleapis.com/css?family=',
+      post: '&display=swap" rel="stylesheet">',
+      location: 'head',
+      filename: 'Open+Sans'
+    },
   },
   {
     name: 'JQuery',

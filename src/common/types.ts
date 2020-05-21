@@ -1,8 +1,8 @@
 export interface FilterType {
   name: string;
   id: string;
-  content: string;
-  location: string;
+  content: any;
+  location?: string;
 }
 
 export interface FilterStates {
