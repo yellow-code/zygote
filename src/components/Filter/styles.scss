@@ -3,10 +3,32 @@
   color: var(--color-primary);
   background-color: var(--color-secondary-lighter);
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 8px 16px;
   margin: 0px 16px 8px 16px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 16px;
+  }
+
+  .options {
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    background-color: var(--color-secondary-lightest);
+
+    margin: 2px 0 0 0;
+
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.4s ease-in-out;
+    padding: 2px 16px;
+
+    &.on {
+      // padding: 8px 16px;
+      max-height: 50px;
+    }
+  }
 }

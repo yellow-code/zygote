@@ -22,10 +22,20 @@ export default function Filter(props: PropTypes) {
 
   const classNames = [styles.filter, props.className];
 
+  const classOptions = [styles.options];
+  if (props.checked) {
+    classOptions.push(styles.on);
+  }
+
   return (
     <div className={_cs(classNames)}>
-      <p> {props.filterName} </p>
-      <ToggleButton checked={props.checked} onToggle={handleToggle}/>
+      <div className={styles.header}>
+        <p> {props.filterName} </p>
+        <ToggleButton checked={props.checked} onToggle={handleToggle}/>
+      </div>
+      <div className={_cs(classOptions)}>
+        <p> We have options here </p>
+      </div>
     </div>
   );
 }

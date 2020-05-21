@@ -9,29 +9,43 @@ interface PropTypes {
   filterStates: FilterStates;
 }
 
+const getPre = (tag: string) => {
+  if (tag === '') {
+    return '';
+  }
+  else {
+    return '\n  ';
+  }
+};
+
 export default function CodeBin(props: PropTypes) {
   const { filterStates, filters, className } = props;
 
   const selectedFilters = filters.filter(filter => filterStates[filter.id]);
 
-  const headTags = selectedFilters
+  let headTags = selectedFilters
     .filter(filter => filter.location === 'head')
     .map(filter => filter.content)
     .join('\n  ');
 
-  const bodyTags = selectedFilters
+  let bodyTags = selectedFilters
     .filter(filter => filter.location === 'body')
     .map(filter => filter.content)
     .join('\n  ');
+
+  const preHead = getPre(headTags);
+  const preBody = getPre(bodyTags);
+
+  headTags = `${preHead}${headTags}`;
+  bodyTags = `${preBody}${bodyTags}`;
 
   const htmlText = `
 <!DOCTYPE html>
 <html>
 <head>
-  ${headTags}
+  <meta charset='UTF-8'>${headTags}
 </head>
-<body>
-  ${bodyTags}
+<body>${bodyTags}
 </body>
 </html>`;
 
