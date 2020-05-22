@@ -7,6 +7,8 @@
   justify-content: center;
   align-items: flex-end;
 
+  user-select: none;
+
   .o {
     height: 64px;
     width: 64px;
@@ -15,12 +17,15 @@
     position: relative;
 
     &::after {
+      font-weight: 1000;
+
       content: '∞';
 
       position: absolute;
-      top: -40%;
+      top: -30%;
+      left: 5%;
 
-      font-size: 64px;
+      font-size: 58px;
     }
   }
 }

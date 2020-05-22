@@ -6,8 +6,35 @@
 
   background-color: var(--color-secondary-lighter);
 
-  font-family: var(--font-mono);
-  font-size: 18px;
+  position: relative;
 
-  white-space: pre;
+  .copy {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+
+    font-size: 24px;
+
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    color: var(--color-secondary);
+
+    &:hover {
+      color: var(--color-secondary-dark);
+    }
+  }
+
+  pre {
+    code {
+      background-color: transparent;
+
+      font-family: var(--font-mono);
+      font-size: 16px;
+
+      line-height: 1.2;
+    }
+  }
 }

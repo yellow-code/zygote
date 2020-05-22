@@ -23,12 +23,31 @@
     max-height: 0;
     overflow: hidden;
 
-    transition: max-height 0.4s ease-in-out;
-    padding: 2px 16px;
+    transition: all 0.4s ease-in-out;
+    // padding: 2px 16px;
 
     &.on {
       // padding: 8px 16px;
-      max-height: 50px;
+      max-height: 72px;
+    }
+
+    .settings {
+      display: flex;
+      justify-content: space-between;
+
+      margin: 8px 16px;
+
+      input {
+        border: none;
+        height: 24px;
+        border-radius: 6px;
+        outline: none;
+
+        color: var(--color-secondary);
+
+        padding: 2px 6px;
+        font-family: var(--font-primary);
+      }
     }
   }
 }

@@ -10,6 +10,8 @@ import { filters } from 'common/filters';
 function App() {
   const [filterStates, setFilterStates] = useState({});
 
+  const [settingsStates, setSettingsStates] = useState({});
+
   return (
     <div>
       <Logo className={styles.logo}/>
@@ -19,8 +21,15 @@ function App() {
           filters={filters}
           filterStates={filterStates}
           onChange={setFilterStates}
+          settingsStates={settingsStates}
+          onSettingsChange={setSettingsStates}
         />
-        <CodeBin className={styles.codeBin} filters={filters} filterStates={filterStates}/>
+        <CodeBin
+          className={styles.codeBin}
+          filters={filters}
+          filterStates={filterStates}
+          settingsStates={settingsStates}
+        />
       </div>
     </div>
   );
