@@ -15,17 +15,5 @@
     border-radius: 50%;
     border: 8px solid var(--color-primary);
     position: relative;
-
-    &::after {
-      font-weight: 1000;
-
-      content: '∞';
-
-      position: absolute;
-      top: -30%;
-      left: 5%;
-
-      font-size: 58px;
-    }
   }
 }
