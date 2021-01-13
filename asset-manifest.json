@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/zygote/static/css/main.e11888e5.chunk.css",
-    "main.js": "/zygote/static/js/main.2eea1014.chunk.js",
-    "main.js.map": "/zygote/static/js/main.2eea1014.chunk.js.map",
+    "main.css": "/zygote/static/css/main.1d08df88.chunk.css",
+    "main.js": "/zygote/static/js/main.88546c4e.chunk.js",
+    "main.js.map": "/zygote/static/js/main.88546c4e.chunk.js.map",
     "runtime-main.js": "/zygote/static/js/runtime-main.69c37813.js",
     "runtime-main.js.map": "/zygote/static/js/runtime-main.69c37813.js.map",
     "static/js/2.f1f25122.chunk.js": "/zygote/static/js/2.f1f25122.chunk.js",
     "static/js/2.f1f25122.chunk.js.map": "/zygote/static/js/2.f1f25122.chunk.js.map",
     "index.html": "/zygote/index.html",
-    "precache-manifest.e81f02c6d621787b608e5e6bdd6dbe0c.js": "/zygote/precache-manifest.e81f02c6d621787b608e5e6bdd6dbe0c.js",
+    "precache-manifest.1612fc7b6941622b22aceb03065f4828.js": "/zygote/precache-manifest.1612fc7b6941622b22aceb03065f4828.js",
     "service-worker.js": "/zygote/service-worker.js",
-    "static/css/main.e11888e5.chunk.css.map": "/zygote/static/css/main.e11888e5.chunk.css.map",
+    "static/css/main.1d08df88.chunk.css.map": "/zygote/static/css/main.1d08df88.chunk.css.map",
     "static/js/2.f1f25122.chunk.js.LICENSE.txt": "/zygote/static/js/2.f1f25122.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.69c37813.js",
     "static/js/2.f1f25122.chunk.js",
-    "static/css/main.e11888e5.chunk.css",
-    "static/js/main.2eea1014.chunk.js"
+    "static/css/main.1d08df88.chunk.css",
+    "static/js/main.88546c4e.chunk.js"
   ]
 }
